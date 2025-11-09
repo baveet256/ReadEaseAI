@@ -41,11 +41,11 @@ export default function Home() {
             <div className="flex flex-row items-center px-2 h-full w-full border-t pt-4">
               <div className="px-2 text-sm ">
                 {" "}
-                Convert text into dyslexia-friendly font
+                Card for Dyslexia
               </div>
               <div>
                 <Button asChild>
-                  <Link href="/upload">Go</Link>
+                  <Link href="/dyslexia">Go</Link>
                 </Button>
               </div>
             </div>
@@ -66,6 +66,46 @@ export default function Home() {
               <div>
                 <Button asChild>
                   <Link href="/blindness">Go</Link>
+                </Button>
+              </div>
+            </div>
+          </Card>
+          <Card className="w-80 flex flex-col items-center py-4 px-4 text-[#020402]">
+            <Image
+              className="rounded-lg"
+              src="/blindness.png"
+              width={300}
+              height={200}
+              alt=""
+            ></Image>
+            <div className="flex flex-row items-center px-2 h-full w-full border-t pt-4">
+              <div className="px-2 text-sm ">
+                {" "}
+                card for autism
+              </div>
+              <div>
+                <Button asChild>
+                  <Link href="/autism">Go</Link>
+                </Button>
+              </div>
+            </div>
+          </Card>
+           <Card className="w-80 flex flex-col items-center py-4 px-4 text-[#020402]">
+            <Image
+              className="rounded-lg"
+              src="/blindness.png"
+              width={300}
+              height={200}
+              alt=""
+            ></Image>
+            <div className="flex flex-row items-center px-2 h-full w-full border-t pt-4">
+              <div className="px-2 text-sm ">
+                {" "}
+                card for adhd
+              </div>
+              <div>
+                <Button asChild>
+                  <Link href="/adhd">Go</Link>
                 </Button>
               </div>
             </div>

@@ -64,7 +64,7 @@ export default function FileUploader({ onFileRead }: FileUploaderProps) {
         className="font-semibold"
       />
       <Button onClick={handleProcess} disabled={!selectedFile} asChild>
-        <Link href="/refined">Let's Go!</Link>
+        <Link href="/processed">Let's Go!</Link>
       </Button>
     </div>
   );
