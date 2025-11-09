@@ -13,9 +13,9 @@ export async function POST(req: NextRequest) {
     }
 
     // Build conversation messages
-    const messages = [
+    const messages: Array<{ role: "user" | "assistant"; content: string }> = [
       {
-        role: "user" as const,
+        role: "user",
         content: `You are a helpful AI assistant for visually impaired users. You have access to the following document content:\n\n${context}\n\nPlease answer questions about this document in a clear, conversational way suitable for audio playback. Keep responses concise and easy to understand when spoken aloud.`,
       },
     ];
@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
 
     // Add current question
     messages.push({
-      role: "user" as const,
+      role: "user",
       content: question,
     });
 
